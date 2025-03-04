@@ -1,0 +1,77 @@
+#main-content {
+    margin-top: 56px; /* Ajusta según el tamaño del ion-toolbar */
+  }
+  
+ion-content {
+    --background: #ffc72c;
+  }
+  
+  ion-toolbar {
+    --background: #da291c; 
+    --color: white; 
+  }
+  
+  ion-button {
+    --background: #da291c;
+    --background-activated: #ffc72c; 
+    --color: white; 
+  }
+  
+  ion-item {
+    --background: white;
+    --border-radius: 10px;
+    margin-bottom: 15px; 
+  }
+  
+  ion-checkbox {
+    --size: 20px; 
+    --background: #ffffff; 
+    --background-checked: #da291c; 
+    --border-color: #da291c;
+    --border-color-checked: #da291c; 
+    --checkmark-color: white; 
+    --size: 32px;
+    --checkbox-background-checked: #da291c;
+  }
+  
+  ion-select {
+    --placeholder-color: #da291c; 
+    --color: #da291c; 
+  }
+  /* Apply the theme to the menu */
+ion-menu {
+    ion-content {
+      --background: #ffc72c; /* Yellow background for the menu content */
+    }
+  
+    ion-toolbar {
+      --background: #da291c; /* Red background for the toolbar */
+      --color: white; /* White text color */
+    }
+  
+    ion-list {
+      background: transparent; /* Make the list background transparent */
+      padding: 16px; /* Add some padding */
+    }
+  
+    ion-item {
+      --background: white; /* White background for items */
+      --border-radius: 10px; /* Rounded corners */
+      margin-bottom: 15px; /* Spacing between items */
+      --color: #da291c; /* Red text color */
+      --padding-start: 16px; /* Add padding to the left */
+      --padding-end: 16px; /* Add padding to the right */
+    }
+  
+    ion-item:hover {
+      --background: #f0f0f0; /* Light gray background on hover */
+    }
+  
+    ion-button {
+      --background: #da291c; /* Red background for buttons */
+      --background-activated: #ffc72c; /* Yellow background when pressed */
+      --color: white; /* White text color */
+      --border-radius: 10px; /* Rounded corners */
+      margin: 16px; /* Add margin around buttons */
+    }
+  }

@@ -1,0 +1,7 @@
+{
+  "name": "BurgerApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

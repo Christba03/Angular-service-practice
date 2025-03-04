@@ -1,0 +1,112 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+
+ion-content {
+    --background: #ffc72c;
+  }
+  
+  ion-toolbar {
+    --background: #da291c; 
+    --color: white; 
+  }
+  
+  ion-button {
+    --background: #da291c;
+    --background-activated: #ffc72c; 
+    --color: white; 
+  }
+  
+  ion-item {
+    --background: white;
+    --border-radius: 10px;
+    margin-bottom: 15px; 
+  }
+  
+  ion-checkbox {
+    --size: 20px; 
+    --background: #ffffff; 
+    --background-checked: #da291c; 
+    --border-color: #da291c;
+    --border-color-checked: #da291c; 
+    --checkmark-color: white; 
+    --size: 32px;
+    --checkbox-background-checked: #da291c;
+  }
+  
+  ion-select {
+    --placeholder-color: #da291c; 
+    --color: #da291c; 
+  }
+  /* Apply the theme to the menu */
+ion-menu {
+    ion-content {
+      --background: #ffc72c; /* Yellow background for the menu content */
+    }
+  
+    ion-toolbar {
+      --background: #da291c; /* Red background for the toolbar */
+      --color: white; /* White text color */
+    }
+  
+    ion-list {
+      background: transparent; /* Make the list background transparent */
+      padding: 16px; /* Add some padding */
+    }
+  
+    ion-item {
+      --background: white; /* White background for items */
+      --border-radius: 10px; /* Rounded corners */
+      margin-bottom: 15px; /* Spacing between items */
+      --color: #da291c; /* Red text color */
+      --padding-start: 16px; /* Add padding to the left */
+      --padding-end: 16px; /* Add padding to the right */
+    }
+  
+    ion-item:hover {
+      --background: #f0f0f0; /* Light gray background on hover */
+    }
+  
+    ion-button {
+      --background: #da291c; /* Red background for buttons */
+      --background-activated: #ffc72c; /* Yellow background when pressed */
+      --color: white; /* White text color */
+      --border-radius: 10px; /* Rounded corners */
+      margin: 16px; /* Add margin around buttons */
+    }
+  }

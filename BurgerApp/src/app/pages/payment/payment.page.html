@@ -1,0 +1,46 @@
+
+
+  <ion-content  class="ion-padding" style="background-color: #ffc72c;"> 
+    <div style="background-color: white; border-radius: 15px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked" style="color: #da291c; font-weight: bold;">Tipo de Hamburguesa</ion-label>
+          <ion-select [(ngModel)]="tipoHamburguesa" placeholder="Selecciona un tipo" interface="action-sheet">
+            <ion-select-option value="30">Sencilla</ion-select-option>
+            <ion-select-option value="40">Doble</ion-select-option>
+            <ion-select-option value="60">Triple</ion-select-option>
+            <ion-select-option value="75">Especial</ion-select-option>
+          </ion-select>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked" style="color: #da291c; font-weight: bold;">Número de Hamburguesas</ion-label>
+          <ion-input type="number" [(ngModel)]="cantidad" placeholder="Ej: 2"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked" style="color: #da291c; font-weight: bold;">Complementos</ion-label>
+          <ion-checkbox [(ngModel)]="papas" style="--background-checked: #da291c;">Papas (+$30)</ion-checkbox>
+          <ion-checkbox [(ngModel)]="arosCebolla" style="--background-checked: #da291c;">Aros de Cebolla (+$20)</ion-checkbox>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label position="stacked" style="color: #da291c; font-weight: bold;">Tipo de Pago</ion-label>
+          <ion-select [(ngModel)]="tipoPago" interface="action-sheet">
+            <ion-select-option value="efectivo">Efectivo</ion-select-option>
+            <ion-select-option value="tarjeta">Tarjeta (+5%)</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+  
+      <ion-button expand="full" color="danger" (click)="calcularTotal()" style="margin-top: 20px;">
+        Calcular Total
+      </ion-button>
+  
+      <ion-item style="margin-top: 20px; background-color: #f0f0f0; border-radius: 10px;">
+        <ion-label style="color: #da291c; font-weight: bold;">Total a Pagar</ion-label>
+        <ion-text style="font-size: 1.2em; font-weight: bold;">{{ total | currency }}</ion-text>
+      </ion-item>
+    </div>
+  </ion-content>
+
