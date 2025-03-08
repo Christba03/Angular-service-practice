@@ -1,0 +1,21 @@
+ion-content {
+    &.sunny-background {
+      --background: url('/assets/images/sunny.jpg') no-repeat center center / cover;
+    }
+  
+    &.rainy-background {
+      --background: url('/assets/images/rainy.jpg') no-repeat center center / cover;
+    }
+  
+    &.windy-background {
+      --background: url('/assets/images/windy.jpg') no-repeat center center / cover;
+    }
+  
+    &.starshower-background {
+      --background: url('/assets/images/starshower.jpg') no-repeat center center / cover;
+    }
+  
+    &.default-background {
+      --background: #f4f4f4;
+    }
+  }

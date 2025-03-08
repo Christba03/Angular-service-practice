@@ -1,0 +1,72 @@
+/* Neon Style */
+.neon-toolbar {
+  --background: #0a0a0a;
+  --color: #00ff00;
+  border-bottom: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.neon-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.neon-content {
+  --background: #1a1a1a;
+  --color: #00ff00;
+}
+
+.neon-container {
+  padding: 20px;
+}
+
+.neon-item {
+  --background: transparent;
+  --color: #00ff00;
+  --border-color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.neon-label {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.neon-input {
+  --color: #00ff00;
+  --placeholder-color: #00ff00;
+  --background: transparent;
+  border-bottom: 2px solid #00ff00;
+}
+
+.neon-button {
+  --background: #00ff00;
+  --color: #0a0a0a;
+  --box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  margin-top: 20px;
+}
+
+.neon-game {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.neon-cell {
+  --background: transparent;
+  --color: #00ff00;
+  --border-color: #00ff00;
+  --box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  font-size: 2rem;
+  height: 80px;
+}
+
+.neon-winner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.neon-winner .neon-label {
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
